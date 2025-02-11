@@ -28,6 +28,7 @@ A simple and secure **Random Password Generator** built using **HTML, CSS, and J
 ```
 
 ## 🔗 Live Demo & Repository
+- **Live Demo**: [Random Password Generator](https://amuqtadir99.github.io/Random-Password-Generator/)
 - **GitHub Repository**: [Random Password Generator](https://github.com/amuqtadir99)
 - **Author**: [Abdul Muqtadir](https://github.com/amuqtadir99) @witwebsolutions | [www.witweb.com.au](https://www.witweb.com.au)
 
