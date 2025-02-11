@@ -12,6 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
 }
 
 .container {
@@ -49,18 +50,7 @@ input {
     outline: none;
 }
 
-.copy-btn {
-    background: #e94560;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #fff;
-    font-size: 16px;
-}
-
-.generate-btn {
-    background: #00adb5;
+.copy-btn, .generate-btn {
     border: none;
     padding: 12px;
     width: 100%;
@@ -70,6 +60,20 @@ input {
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.copy-btn {
+    background: #e94560;
+    display: none;
+}
+
+.copy-btn.copied {
+    background: #00c853;
+}
+
+.generate-btn {
+    background: #00adb5;
 }
 
 footer {
@@ -89,4 +93,28 @@ footer {
 
 .author a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .password-box {
+        padding: 8px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    .copy-btn, .generate-btn {
+        font-size: 16px;
+        padding: 10px;
+    }
 }

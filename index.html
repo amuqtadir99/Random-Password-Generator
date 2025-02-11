@@ -19,26 +19,22 @@
             </header>
             <div class="password-box">
                 <input type="text" id="password" placeholder="Your Password" readonly>
-                <button class="copy-btn" onclick="copyPassword()">
-                    <i class="far fa-copy"></i>
-                </button>
-            </div>
-            <div class="password-indicator">
-                <div class="strength-bar"></div>
             </div>
             <button class="generate-btn" onclick="generatePassword()">
                 <i class="fas fa-bolt"></i>
                 Generate Password
             </button>
+            <button class="copy-btn" id="copyBtn" onclick="copyPassword()" style="display: none;">
+                <i class="far fa-copy"></i>
+                Copy Password
+            </button>
         </div>
     </div>
-
     <footer>
         <div class="author">
             <p>Created by <a href="https://github.com/amuqtadir99" target="_blank">Abdul Muqtadir</a> @witwebsolutions | <a href="https://www.witweb.com.au" target="_blank">www.witweb.com.au</a></p>
         </div>
     </footer>
     <script src="script.js"></script>
-
 </body>
 </html>
